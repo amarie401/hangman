@@ -1,0 +1,81 @@
+* {
+    font-family: $primaryFont;
+    text-align: center;
+}
+
+body {
+    background: $generalBackground;
+    color: $body;
+    h1 {
+        font-size: 5em;
+    }
+    h3 {
+
+    }
+}
+
+#word {
+    width: auto;
+    height: auto;
+    padding: $generalPadding;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 5em;
+    text-align: center;
+}
+
+#letterGuess {
+    padding: $generalPadding;
+    #letter, #guessButton {
+        height: 100%;
+        font-size: $generalFontSize;
+    }
+}
+
+
+#wrong {
+    min-height: 20px;
+}
+
+
+ #lives {
+    display: inline;
+    font-size: $generalFontSize;
+}
+
+
+.letters-hidden {
+    background: $generalBackground;
+    border-bottom: 3px solid $red;
+    color: $generalBackground;
+    font-size: 29px;
+    letter-spacing: 1px;
+    margin: 0 2px;
+    padding: 10px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.guess-show {
+    color: $red;
+    font-size: 29px;
+    letter-spacing: 1px;
+    margin: 0 2px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.end-game p {
+    color: $white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.scale {
+    transition: all 3s ease;
+    transform: scale(1.5);
+}
+
+.show-letter {
+    color: $black;
+}
